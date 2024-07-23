@@ -1,32 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
 h1 {
-    text-align: center;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-#schedule {
-    max-width: 800px;
-    margin: 0 auto;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.match {
-    background: #fff;
+li {
+    font-size: 1.2em;
     margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.match h3 {
-    margin: 0 0 10px;
-}
-
-.match p {
-    margin: 0;
 }
