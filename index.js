@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.football-data.org/v2/competitions/PL/matches', {
-        headers: { 'X-Auth-Token': 'YOUR_API_TOKEN' }
+        headers: { 'X-Auth-Token': '0b9b6dc344a94f93a57e53756de1e29f' }
     })
     .then(response => response.json())
     .then(data => {
