@@ -1,33 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
     margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    margin-bottom: 20px;
 }
 
 #schedule {
-    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .match {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.match:last-child {
-    border-bottom: none;
+.match h3 {
+    margin: 0 0 10px;
+}
+
+.match p {
+    margin: 0;
 }
