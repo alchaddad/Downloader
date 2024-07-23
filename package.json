@@ -1,14 +1,14 @@
- 
 {
-  "name": "video-downloader-server",
+  "name": "football-schedule",
   "version": "1.0.0",
+  "description": "A web app to display football schedules",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "serve"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "ytdl-core": "^4.9.1",
-    "cors": "^2.8.5"
-  }
+    "serve": "^14.0.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
