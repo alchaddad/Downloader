@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('https://api.football-data.org/v2/matches', {
+        headers: {
+            'X-Auth-Token': '0b9b6dc344a94f93a57e53756de1e29f' // تأكد من استبدال YOUR_API_KEY بمفتاح API الخاص بك
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const scheduleDiv = document.getElementById('schedule');
+        const matches = data.matches;
+        let html = '<ul>';
+
+        matches.forEach(match => {
+            html += `<li>${match.homeTeam.name} vs ${match.awayTeam.name} - ${new Date(match.utcDate).toLocaleString()}</li>`;
+        });
+
+        html += '</ul>';
+        scheduleDiv.innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Error fetching the schedule:', error);
+        document.getElementById('schedule').innerHTML = 'An error occurred while fetching the schedule.';
+    });
+});
